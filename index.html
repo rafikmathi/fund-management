@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quantum Capital - Fund Management</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        .gradient-bg {
+            background: linear-gradient(to right, #4f46e5, #8b5cf6); /* Purple gradient */
+        }
+    </style>
+</head>
+<body class="text-gray-900">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-lg p-4 rounded-b-lg">
+        <div class="container mx-auto flex justify-between items-center flex-wrap">
+            <a href="#" class="text-2xl font-bold text-gray-800">Quantum Capital</a>
+            <div class="space-x-4">
+                <a href="#home" class="text-gray-600 hover:text-indigo-600 font-semibold transition duration-300 ease-in-out">Home</a>
+                <a href="#about" class="text-gray-600 hover:text-indigo-600 font-semibold transition duration-300 ease-in-out">About Us</a>
+                <a href="#innovation" class="text-gray-600 hover:text-indigo-600 font-semibold transition duration-300 ease-in-out">Innovation</a>
+                <a href="#services" class="text-gray-600 hover:text-indigo-600 font-semibold transition duration-300 ease-in-out">Services</a>
+                <a href="#contact" class="text-gray-600 hover:text-indigo-600 font-semibold transition duration-300 ease-in-out">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-20 px-4 text-center rounded-lg m-4 shadow-xl">
+        <div class="container mx-auto">
+            <h1 class="text-5xl font-bold mb-4">Empowering Your Financial Future</h1>
+            <p class="text-xl mb-8">Strategic fund management for sustainable growth and long-term success.</p>
+            <a href="#services" class="bg-white text-indigo-700 font-bold py-3 px-8 rounded-full shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out transform hover:scale-105">Explore Our Solutions</a>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-4 bg-white rounded-lg m-4 shadow-md">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">About Quantum Capital</h2>
+            <div class="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed">
+                <p class="mb-4">Quantum Capital is a leading fund management firm dedicated to delivering superior returns through disciplined investment strategies and deep market insights. Our team of experienced financial professionals leverages cutting-edge analytics and a client-centric approach to navigate complex financial landscapes.</p>
+                <p>We believe in transparency, integrity, and building lasting relationships with our clients based on trust and mutual success. Our commitment is to help you achieve your financial aspirations with confidence.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Innovation & Resilience Section -->
+    <section id="innovation" class="py-16 px-4 bg-gray-100 rounded-lg m-4 shadow-md">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Innovation & Resilience in Fund Management</h2>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Challenge: Real-time Market Volatility & Data Integration</h3>
+                    <p class="text-gray-700 mb-4">The financial markets are increasingly volatile, requiring instantaneous data processing and analysis. Integrating disparate data sources (stock exchanges, news feeds, economic indicators) in real-time was a significant technical hurdle.</p>
+                    <p class="text-gray-700"><strong>Resolution:</strong> Our engineering team implemented a robust, cloud-native data pipeline using Apache Kafka for real-time streaming and Google Cloud Dataflow for complex event processing. This allows us to ingest, process, and analyze market data from over 50 sources in milliseconds, feeding live insights into our trading algorithms and risk models.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Challenge: Data Security & Regulatory Compliance</h3>
+                    <p class="text-gray-700 mb-4">Protecting sensitive client financial data from cyber threats and adhering to stringent global financial regulations (GDPR, HIPAA for health-related investments, etc.) presented complex security challenges.</p>
+                    <p class="text-gray-700"><strong>Resolution:</strong> We deployed an immutable ledger system (blockchain-inspired) for transaction records, ensuring data integrity and auditability. Combined with advanced encryption standards (AES-256) and multi-factor authentication (MFA) across all platforms, our security framework is designed to exceed industry best practices and regulatory mandates.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Challenge: Scalability of AI-driven Analytics</h3>
+                    <p class="text-gray-700 mb-4">As our client base grew and the complexity of our predictive models increased, scaling our AI and machine learning infrastructure to handle petabytes of data and millions of daily computations became a pressing concern.</p>
+                    <p class="text-gray-700"><strong>Resolution:</strong> We transitioned to a serverless architecture on Azure, utilizing Kubernetes for container orchestration and leveraging powerful GPUs for parallel processing of AI models. This allows our analytics platform to auto-scale dynamically, ensuring high performance and cost-efficiency regardless of workload spikes.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Challenge: Seamless Cross-Platform Accessibility</h3>
+                    <p class="text-gray-700 mb-4">Providing a consistent and intuitive user experience across web, desktop, and mobile platforms, while maintaining high performance and responsiveness, was a significant development challenge.</p>
+                    <p class="text-gray-700"><strong>Resolution:</strong> Our frontend team adopted a progressive web application (PWA) approach with a React-based single-page application (SPA). This enables a unified codebase that delivers a native-app-like experience on any device, ensuring accessibility and responsiveness without compromising functionality.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-4 bg-white rounded-lg m-4 shadow-md">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-12">Our Specialized Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service Card 1 -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Wealth Management</h3>
+                    <p class="text-gray-700">Tailored financial planning and investment strategies to grow and protect your personal wealth. We use AI-driven tools to personalize portfolio recommendations.</p>
+                </div>
+                <!-- Service Card 2 -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="2xl font-semibold text-indigo-700 mb-4">Portfolio Optimization</h3>
+                    <p class="text-gray-700">Advanced analytics and rebalancing to maximize returns and minimize risks across your investments. Our algorithms continuously monitor market shifts and adjust allocations.</p>
+                </div>
+                <!-- Service Card 3 -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Risk Assessment</h3>
+                    <p class="text-gray-700">Comprehensive evaluation of potential financial risks and strategies to mitigate them effectively. Our predictive models analyze market trends and geopolitical factors.</p>
+                </div>
+                <!-- Service Card 4 -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Advisory Services</h3>
+                    <p class="text-gray-700">Expert guidance on market trends, investment opportunities, and financial decisions, backed by real-time data insights.</p>
+                </div>
+                <!-- Service Card 5 -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Estate Planning</h3>
+                    <p class="text-gray-700">Strategic planning to ensure your assets are distributed according to your wishes and minimize tax implications, utilizing secure digital documentation.</p>
+                </div>
+                <!-- Service Card 6 -->
+                <div class="bg-gray-100 p-8 rounded-xl shadow-lg hover:shadow-xl transition duration-300 ease-in-out transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-indigo-700 mb-4">Retirement Planning</h3>
+                    <p class="text-gray-700">Crafting personalized plans to secure your financial comfort and lifestyle in retirement, with tools to project future financial scenarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 px-4 bg-gray-100 rounded-lg m-4 shadow-md">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">Get in Touch</h2>
+            <p class="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">Have questions about our services or your financial future? We're here to help.</p>
+            <div class="max-w-xl mx-auto">
+                <form class="space-y-6">
+                    <div>
+                        <input type="text" placeholder="Your Name" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Your Email" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500">
+                    </div>
+                    <div>
+                        <textarea placeholder="Your Message" rows="5" class="w-full p-3 border border-gray-300 rounded-lg shadow-sm focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="w-full gradient-bg text-white font-bold py-3 px-6 rounded-lg shadow-lg hover:opacity-90 transition duration-300 ease-in-out">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8 px-4 text-center rounded-t-lg mt-4">
+        <div class="container mx-auto">
+            <p>&copy; 2025 Quantum Capital. All rights reserved.</p>
+            <div class="mt-4 space-x-4">
+                <a href="#" class="hover:text-indigo-400 transition duration-300">Privacy Policy</a>
+                <a href="#" class="hover:text-indigo-400 transition duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
